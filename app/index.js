@@ -6,10 +6,6 @@ app.get("/", (req, res) => {
     res.send("Hello World")
 })
 
-app.get("/chai", (req, res) => {
-    res.send("Hello World chai")
-})
-
 // take params from url and returns a response
 app.get("/:id", (req, res) => {
     res.send(`Hello World Hitesh ${req.params.id}`)
